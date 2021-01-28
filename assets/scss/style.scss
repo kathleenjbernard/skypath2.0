@@ -1,0 +1,69 @@
+/*
+
+Project      : Dosis - Creative Agency Portfolio One Page Parallax Template
+Version      : v1.1
+Last update  : N/A
+Author       : design_mylife
+Support email: mylifedesign143@gmail.com
+*/
+/**************************************
+
+=============TABLE OF CONTENT==========
+01 - variables
+02 - mixins
+03 - preloader
+04 - base
+05 - buttons
+06 - hero-social-bar
+07 - navbar
+08 - hero-templates
+09 - sliders
+10 - icon-box
+11 - cta
+12 - team
+13 - pricing
+14 - portfolio
+15 - contact
+16 - footer
+17 - Vertical Navbar
+18 - responsive
+***************************************/
+
+/***** Import Ion icon fonts ************/
+@import "../../fonts/ionicons4/css/ionicons.min.css";
+/***** Google fonts import ************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Roboto:300,300i,400,400i,500,700');
+/***** Import Scss files ************/
+@import "_variables";
+@import "_mixins";
+@import "_preloader";
+@import "_base";
+@import "_buttons";
+@import "_hero-social-bar";
+@import "_navbar";
+@import "_hero-templates";
+@import "_sliders";
+@import "_icon-box";
+@import "_cta";
+@import "_team";
+@import "_pricing";
+@import "_portfolio";
+@import "_contact";
+@import "_blog";
+@import "_footer";
+@import "_vertical-nav";
+@import "_responsive";
+
+
+
+
+
+/* Demo page css (Remove during development) */
+
+.demo-link{
+    @include transition(all .3s);
+    &:hover{
+        @include transform(translateY(-10px));
+        box-shadow: 0px 0px 20px rgba($default-color,.75);
+    }
+}

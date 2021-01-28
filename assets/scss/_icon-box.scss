@@ -1,0 +1,82 @@
+/*
+10 - icon-boxes
+*/
+.feature-icon{
+    border: 1px solid rgba($skin-color,.15);
+    padding: 3rem 2rem;
+    @include border-radius(5px);
+    p{
+        margin-bottom: 0px;
+    }
+    i{
+        background-color: rgba($skin-color,1);
+        background-image: -webkit-linear-gradient(0deg, rgba($skin-color,1), rgba($skin-secondary,1));
+        background-image: linear-gradient(90deg, rgba($skin-color,1), rgba($skin-secondary,1));
+        @include transition (all .3s);
+        overflow:hidden;
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        font-size: 2.5rem;
+        color:#fff;
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+    }
+    &:hover i{
+        @include transform (translateY(-10px));
+        @include box-shadow(0px 0px 20px rgba($skin-color,.35));
+    }
+}
+.service-card{
+    padding: 1.5rem;
+    border: 1px solid $default-color;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    img{
+        border-radius: 5px;
+    }
+}
+.feature-icon,.feature-icon-2,.service-card{
+    h5{
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.feature-icon-2{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left:3.75rem;
+    overflow: hidden;
+    @include border-radius(5px);
+    border: 1px solid $default-color;
+    p{
+        margin-bottom: 0px;
+    }
+>i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    width:4rem;
+    height: 4rem;
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 2rem;
+    top:.5rem;
+    left: 0;
+    line-height: 1;
+    color: $skin-color;
+}
+h5{
+    margin-top: 0px;
+    color: $skin-color;
+}
+}

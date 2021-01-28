@@ -1,0 +1,269 @@
+/*
+17 - Template Responsive Style
+*/
+/*******Responsive style**************/
+@media(max-width:991px){
+    .swiper-container.swiper-hero .display-4{
+        font-size: 1.75rem;
+    }
+    .pt-100{
+        padding-top: 70px!important;
+    }
+    .pb-100{
+        padding-bottom: 70px!important;
+    }
+    .pb-70{
+        padding-bottom: 40px!important;
+    }
+    .navbar.navbar-expand-lg{
+        position: fixed;
+        top: 0;
+        left: 0;
+       &.navbar-vertical .navbar-brand{
+            img{
+                height: 30px;
+            }
+        }
+    }
+    .navbar-dark .navbar-toggler{
+        color: #fff;
+    }
+    .text-intro-large{
+        font-size: 2rem;
+    }
+    .smart-wrap{
+        padding-top: 2rem;
+    }
+    .display-4,.text-medium{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .slider-banner .slider-table .slider-vm h1{
+        font-size: 4rem;
+    }
+    .navbar.navbar-expand-lg.navbar-transparent{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 999;
+    }
+    .main-content{
+        .services-list li:nth-child(1),.services-list li:nth-child(3),.services-list li:nth-child(5),.services-list li:nth-child(1),.services-list li:nth-child(2),.services-list li:nth-child(3),.services-list li:nth-child(4){
+            border:0px !important;
+        }
+        .flexslider .slides li h1{
+            font-size: 4rem;
+        }
+    }
+    .hero-gutter-md{
+        margin-top: 50px;
+    }
+    .hero {
+        .text-large{
+            font-size: 2rem;
+        }
+        p.lead{
+            font-size: 13px;
+        }
+    }
+    .hero-social-bar{
+        display: none;
+    }
+    .navbar-toggler{
+        border:0px;
+        >i{
+            font-size:2rem;
+        }
+     }
+     .navbar .navbar-collapse{
+         max-height: 280px;
+         overflow-y: scroll;
+     }
+     .bg-parallax.no-gutter{
+         display: none!important;
+     }
+     .hero-video{
+        .hero-social-bar{
+            top: auto;
+            bottom: 3rem;
+            z-index: 99;
+           li span{
+                display: none!important;
+            }
+        }
+     }
+     .cbp-l-filters-work .cbp-filter-item{
+        padding: 0px 5px;
+        border: 0px;
+        font-size: 10px;
+        line-height: 1;
+    }
+    .cbp-l-filters-work .cbp-filter-item.cbp-filter-item-active{
+        background-color: transparent;
+        color: $skin-color;
+        background-image: none;
+    }
+    .cbp-l-filters-work .cbp-filter-counter{
+        margin-left: 0px;
+    }
+    .section-title h2{
+        font-size: 1.75rem;
+    }
+    .price-box h2{
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .testimonial-card img{
+        width: 90px;
+    }
+    .testimonial-card p.lead{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: .45rem 1.25rem .36rem;
+        &.btn-icon{
+            padding-left: 2.15rem;
+            >i{
+                left: .05rem;
+            }
+        }
+    }
+    .newsletter-form .form-control{
+        height: 40px;
+    }
+    .btn.btn-lg.btn-icon{
+        font-size: 13px;
+        padding: .9rem 1.75rem;
+        padding-left: 3rem;
+        >i{
+            left: .5rem;
+        }
+    }
+    .service-card{
+        padding: 0;
+        border: 0px;
+    }
+    .feature-icon{
+        padding: 1.25rem 0;
+        border: 0px;
+    }
+    .h2, h2 {
+        font-size: 1.5rem;
+    }
+    .contact-wrapper .col-md-6{
+        padding-bottom: 1rem;
+    }
+    body{
+        font-size: 14px;
+    }
+    .footer ul li a{
+        font-size: 13px;
+        padding:0 .5rem;
+    }
+    body{
+        margin-top: 60px;
+        .navbar .nav-item .btn{
+            margin-top: 1rem;
+        }
+    }
+    .page-title{
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+    .parallax-me p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:767px){
+    
+    .swiper-container.swiper-hero{
+        p.lead{
+            font-size: 13px;
+            margin-bottom: 1rem;
+        }
+        .display-4{
+            font-size: 1.5rem;
+        }
+    }
+    .footer{
+        text-align: center!important;
+        ul li a{
+            padding: 0 .5rem;
+        }
+        .text-right{
+            text-align: center!important;
+        }
+    }
+    .cbp-l-project-title{
+        font-size: 1.75rem;
+    }
+    .cbp-l-project-desc-text{
+        font-size: 1rem;
+    }
+    .cbp-l-project-related-title,.cbp-l-project-desc-title span, .cbp-l-project-details-title span{
+        font-size: 12px;
+    }
+    .cbp-l-project-details-visit {
+        padding: .5rem 1rem .4rem;
+        font-size: 11px;
+    }
+    .cbp-l-filters-work .cbp-filter-item{
+        font-size: 9px;
+    }
+    .btn.btn-lg{
+        padding: .7rem 1.5rem .65rem;
+        &.btn-icon{
+            padding: .7rem 1.5rem .65rem;
+            padding-left: 3rem;
+        }
+    }
+   .hero{
+       .text-large{
+           font-size: 1.75rem;
+       }
+   }
+   .text-intro-large{
+       font-size: 1.25rem;
+   }
+.section-title h2{
+    font-size: 1.5rem;
+}
+.lead{
+    font-size: 1.1rem;
+}
+.h2, h2{
+    font-size: 1.25rem;
+}
+}
+@media(max-width:576px){
+    .footer-svg-2.footer figure{
+        height: 21px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 15%;
+    }
+    .footer{
+        padding-bottom: 30px;
+        >*,.text-right{
+            text-align: center!important;
+        }
+    }
+   .contact-wrapper .title-name{
+        padding-top: 1rem;
+        margin-bottom: .5rem;
+    }
+    .bg-parallax{
+        background-position:top center!important;
+    }
+    .feature-icon-alt{
+        margin-bottom: 50px;
+        background-color: $default-color;
+    }
+    .row .col-md-6:nth-child(1) .feature-icon-alt{
+        margin-top: 50px;
+    }
+}

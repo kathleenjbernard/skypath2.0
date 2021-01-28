@@ -1,0 +1,162 @@
+/*
+05 - Button style
+*/
+
+.btn{
+    font-family: $default-font;
+    text-transform: uppercase;
+    font-size:12px;
+    line-height: inherit;
+    letter-spacing: 2px;
+    padding: .65rem 1.75rem .55rem;
+    @include border-radius(4px);
+    font-weight:500;
+    @include transition(all 0.3s);
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        @include transform(translateY(-5px));
+    }
+    &.btn-icon{
+        padding-left: 3rem;
+    }
+    >i{
+        font-size: 18px;
+        font-weight: normal;
+        vertical-align: middle;
+        display: flex;
+        width: 2.5rem;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        left: .5rem;
+        top: 0px;
+        line-height:1;
+        position: absolute;
+    }
+    &.btn-lg{
+        padding: .95rem 2.5rem .85rem;
+        font-size: 13px;
+        >i{
+            font-size: 24px;
+            left: 1rem;
+        }
+        &.btn-icon{
+            padding-left: 4rem;
+        }
+     }
+     &.btn-xs{
+        padding: .45rem 1rem .35rem;
+        font-size: 10px;
+        >i{
+            font-size: 16px;
+            width: 1.75rem;
+            left: .5rem;
+        }
+        &.btn-icon{
+            padding-left: 2.5rem;
+        }
+     }
+     &.btn-radius{
+        @include border-radius(100px);
+     }
+}
+
+.btn-dark-border{
+    border: 1px solid $dark-color;
+    color:$dark-color;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background: $dark-color;
+        box-shadow: 0px 0px 20px rgba($dark-color,.35);
+        color:#fff;
+    }
+}
+.btn-skin-border{
+    border: 1px solid $skin-color;
+    color:$skin-color;
+    background-color:transparent;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background:$skin-color;
+        box-shadow: 0px 0px 20px rgba($skin-color,.35);
+        color:#fff;
+    }
+}
+.btn-white-border{
+    border: 1px solid #fff;
+    color:#fff;
+    background-color:transparent;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $skin-color;
+        border-color: $skin-color;
+        box-shadow: 0px 0px 20px rgba($skin-secondary,.35);
+        color:#fff;
+    }
+}
+.btn-light-border{
+    border: 1px solid $default-color;
+    color:$base-color;
+    background-color:transparent;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $default-color;
+        border-color: $default-color;
+        box-shadow: 0px 0px 20px rgba($default-active,.35);
+        color:$dark-color;
+    }
+}
+.btn.btn-white{
+    border:0px;
+    background-color: #fff;
+    color:inherit;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $default-color;
+        box-shadow: 0px 0px 20px rgba($dark-color,.15);
+        color:inherit;
+    }
+}
+.btn.btn-light{
+    border:0px;
+    background-color: $default-color;
+    color:inherit;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $default-active;
+        box-shadow: 0px 0px 20px rgba($dark-color,.15);
+        color:inherit;
+    }
+}
+.btn.btn-dark{
+    border:0px;
+    background-color: $dark-color;
+    color:#fff;
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $dark-color;
+        box-shadow: 0px 0px 20px rgba($dark-color,.35);
+        color:#fff;
+    }
+}
+.btn.btn-skin{
+    border:0px;
+    background-color: $skin-color;
+    color:#fff;
+     &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        background-color: $skin-active;
+        box-shadow: 0px 0px 20px rgba($skin-color,.35);
+        color:#fff;
+    }
+}
+.btn-link{
+    color: $skin-color;
+    &:hover{
+        color: $base-color;
+    }
+}
+
+.smart-forms button{
+    font-family: $title-font;
+    font-size: 12px!important;
+}
+.btn.bg-facebook,.btn.bg-twitter{
+    &:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus,&:not(:disabled):not(.disabled):active:focus{
+        color: #fff;
+        box-shadow: 0px 1px 5px rgba($skin-color,.2);
+    }
+}

@@ -1,0 +1,79 @@
+/*
+16 - Footer styles
+*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    background-color: rgba($skin-color,1);
+    background-image: -webkit-linear-gradient(0deg, rgba($skin-color,1), rgba($skin-secondary,1));
+    background-image: linear-gradient(90deg, rgba($skin-color,1), rgba($skin-secondary,1));
+    position:relative;
+    .svg-footer{
+        position: absolute;
+        bottom: 0;
+        right:0;
+        width: 100%;
+    }
+    span{
+        color: #fff;
+        display: block;
+        opacity:.75;
+    }
+    ul{
+        margin: 0;
+        padding: 0px;
+        li{
+            
+            line-height: 1;
+            margin-right: 0px;
+            position: relative;
+            &:not(:last-child){
+                margin-right: 0px;
+            }
+           
+            &:last-child a{
+                &:before{display: none}
+            }
+            a{
+                color:#fff;
+                padding: 0px .85rem;
+                position: relative;
+                display: block;
+                line-height: 1;
+                opacity: .75;
+                &:before{
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 1px;
+                    background-color: rgba(#fff,.5);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.footer-svg-2.footer{
+    background-color: $dark-color;
+    background-image: none;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    figure{
+        position: absolute;
+        width: 100%;
+        top:0;
+        left: 0;
+        vertical-align: baseline;
+    }
+}
+.fill-dark{
+    fill: $dark-color;
+}

@@ -1,0 +1,31 @@
+/**
+11 - Call to action sections
+**/
+.parallax-me{
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2,p{
+        color:#fff;
+    }
+    p{
+        opacity: .85;
+    }
+    .parallax-overlay{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($skin-color,.4);
+        background-image: -webkit-linear-gradient(0deg, rgba($skin-color,.4), rgba($skin-secondary,.4));
+        background-image: linear-gradient(90deg, rgba($skin-color,.4), rgba($skin-secondary,.4));
+    }
+    .container,.container-fluid{
+        position: relative;
+        z-index: 3;
+    }
+    .image-shape-bottom{
+        z-index: 3;
+    }
+}
