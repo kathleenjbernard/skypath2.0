@@ -212,8 +212,8 @@ blockquote {
   color: #fff; }
 
 .h1, h1 {
-  font-family: 'open sans', sans-serif;
-  font-weight: 700;
+  font-family:'Lora', serif;
+  font-weight: 300;
   font-size: 72pt;
   color: white;
   line-height: 1.6;
@@ -221,8 +221,8 @@ blockquote {
 }
 
 .skypath-logo {
-  font-weight: 700;
-  font-family: 'open sans', sans-serif;
+  font-weight: 300;
+  font-family: 'Lora', serif;
   letter-spacing: 0.5;
 }
 
